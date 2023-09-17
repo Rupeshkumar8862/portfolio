@@ -1,0 +1,333 @@
+*{padding:0; margin:0; box-sizing:border-box; font-family: sans-serif;}
+
+::-webkit-scrollbar{
+	width: 13px;
+}
+::-webkit-scrollbar-track{
+	width: 13px;
+	background: #262626;
+	border-left: 0px solid white;
+	border-right: 0px solid white;
+}
+
+::-webkit-scrollbar-thumb{
+	background:#e91e63;
+	width: 0;
+	height: 35%;
+	transition: 0.5s ease;
+	cursor: pointer; 
+}
+body{
+	background: #262626;
+	scroll-behavior: smooth;
+}
+header{
+	width: 100%;
+	height: 100vh;
+
+}
+nav{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	color: white;
+	padding: 0px 100px;
+	position: absolute;
+	z-index: 1;
+}
+
+
+/*
+
+::-webkit-scrollbar{
+	width: 13px;
+}
+::-webkit-scrollbar-track{
+	width: 13px;
+	background: #262626;
+	border-left:0px solid white;
+	border-radius: 0px solid white;
+}
+::-webkit-scrollbar-thumb{
+background:#e91e63;
+width: 0;
+height: 35%;
+transition:0.5s ease;
+cursor: pointer;
+}
+*/
+
+.logo{
+	font-size: 40px;
+	letter-spacing: 5px;
+}
+.menu a{
+	text-decoration: none;
+	color: white;
+	padding: 10px 20px;
+	font-size: 20px;
+}
+
+.circle1{
+	width: 500px;
+	height: 500px;
+	background: #e91e63;
+	clip-path: circle(80% at 0% 0%);
+}
+
+.h-text{
+	position: absolute;
+	top:25%;
+	left: 8%;
+	color: white;
+	z-index: 1;
+}
+.h-text h1{
+	font-size: 4.5em;
+
+}
+.h-text h2{
+	font-size: 2.5em;
+	color: black;
+	letter-spacing: 5px;
+}
+
+.r-img img{
+	position: absolute;
+	right: 10%;
+	top:10%;
+	width: 400px;
+}
+.watermark1{
+	position: absolute;
+	bottom: 5%;
+	right: 10%;
+	font-size: 8.5em;
+	letter-spacing: 15px;
+	color: rgba(255,255,255,0.1);
+}
+#about{
+	padding: 50px 100px;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	color: white;
+}
+.circle2{
+	width: 300px;
+	height: 300px;
+	background: #e91e63;
+	border-radius: 56% 44% 49% 51% / 42% 11% 89% 58%;
+	position: absolute;
+	top: 20%;
+	right: 10%;
+
+	}
+
+.about-text{
+	text-align:right;
+	color: white;
+	max-width: 600px;
+	position: absolute;
+	top:32%;
+	right: 18%;
+	z-index: 1;
+}
+
+.about-text h1{
+	font-size: 4.5em;
+	margin-bottom: 15px;
+}
+.about-text h2{
+	color: black;
+}
+#ab-img{
+	width: 300px;
+	height: 350px;
+	position: absolute;
+	bottom: -10%;
+	z-index: 1;
+}
+
+
+
+
+#work{
+	padding: 0px 100px;
+	width: 100%;
+	height: 100vh;
+	background: #e91e63;
+}
+
+.card{
+	padding-top:200px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.card-box{
+	flex-basis: 25%;
+	background: #262626;
+	color: white;
+	padding: 20px;
+	cursor: pointer;
+	box-shadow: 2px 3px 5px black;
+	margin:0px 20px;
+}
+
+.card-box i{
+	padding: 20px;
+	background: white;
+	color: black;
+	font-size: 20px;
+	margin-bottom: 10px;
+	border-radius: 56% 44% 49% 51% / 42% 11% 89% 58%;
+}
+.card-box h2{
+	color: #e91e63;
+	margin-bottom: 10px;
+}
+#contact{
+	width: 100%;
+	height: 100vh;
+	padding: 0px 100px;
+	position: relative;
+
+}
+.watermark2{
+	position: absolute;
+	top:-15%;
+	right: 10%;
+	color: rgba(255,255,255,0.4);
+	font-size: 8.5em;
+	letter-spacing: 15px;
+}
+.form{
+	max-width: 400px;
+	position: absolute;
+	top: 50%;
+}
+.form input{
+	padding: 10px;
+	background: none;
+	width: 100%;
+	border: 1px solid #e91e63;
+	margin-bottom: 10px;
+}
+textarea{
+	padding: 10px;
+	background: none;
+	width: 100%;
+	border: 1px solid #e91e63;
+	margin-bottom: 10px;
+}
+button{
+	width: 100%;
+	padding: 10px;
+	border: none;
+	outline: none;
+	color: white;
+	background: #e91e63;
+	border-radius: 56% 44% 49% 51% / 42% 11% 89% 58%;
+}
+
+
+footer{
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	color: white;
+}
+
+footer i{
+	margin:0px 5px;
+	margin-top:10px;
+	padding: 10px;
+	font-size: 15px;
+	background: #e91e63;
+	border-radius: 56% 44% 49% 51% / 42% 11% 89% 58%;
+}
+#whatsap{
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	padding: 10px;
+	font-size: 30px;
+	color: white;
+	background: #25d366;
+	border-radius: 50%;
+}
+.dots{
+	position: fixed;
+	right:5%;
+	top:50%;
+	transform: translateY(-50%);
+
+	
+}
+.dots > div{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border-radius:50%;
+	margin:5px 0px;
+	overflow: hidden;
+}
+
+
+#a{
+	background: white;
+	color: white;
+}
+#b{
+	background: yellow;
+	color: yellow;
+}
+#c{
+	background:blue;
+	color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
